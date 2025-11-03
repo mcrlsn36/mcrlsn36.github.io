@@ -2,7 +2,7 @@
 
 ## Image 1
 
-![Flower drawing](../../images/Flower IMG.HEIC)
+![Flower drawing](../../images/Flower.png)
 
 ## Image 2
 
