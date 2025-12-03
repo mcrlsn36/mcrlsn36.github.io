@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Who wants Ice Cream??</title>
+<h1>You're Invited to an Ice Cream Party!</h1>
+<script src="../js/validate.js"></script>
+</head>
+<body>
+<form action="https://httpbin.org/post" method="post">
+What is your name?
+<input type="text" name= "your name">
+<br>
+What is your email?
+<input type="email" name="email">
+<br>
+What is your phone number?
+<input type="text" name="number">
+<br>
+How many people will you bring with you to the party?
+<input type="number" name="number">
+<br>
+<h3>What is your favorite flavor of ice cream?</h3>
+<label for="Vanilla">Vanilla</label> 
+<input type="radio" id="Vanilla" name="meal" value="Vanilla" required>
+<br>
+<label for="Chocolate Chip">Chocolate Chip</label>
+<input type="radio" id="Chocolate Chip" name="meal" value="Chocolate Chip" required>
+<br>
+<label for="Strawberry">Strawberry</label>
+<input type= "radio" id="Strawberry" name="meal" value="Strawberry" required>
+<br>
+<label for="Other">Other</label>
+<input type="radio" id="Other" name="Other" value="Other" required>
+<br>
+<h3>What toppings do you like?</h3>
+<label for="Sprinkles">Sprinkles</label>
+<input type="checkbox" id="Sprinkles" name="Sprinkles">
+<br>
+<label for="Magic Shell">Magic Shell</label>
+<input type="checkbox" id="Magic Shell" name="Magic Shell">
+<br>
+<label for="Chocolate Chips">Chocolate Chips</label>
+<input type="checkbox" id="Chocolate Chips" name="Chocolate Chips">
+<br>
+<label for="Gummy Bears">Gummy Bears</label>
+<input type="checkbox" id="Gummy Bears" name="Gummy Bears">
+<br>
+<label for="Other">Other</label>
+<input type="checkbox" id="Other" name="Other">
+<Br>
+<h3>What kind of entertainment should we have at the party?</h3>
+<label for= "Choose"> Choose:</label>
+<select id="Choose" name="Choose">
+<option value="Balloon Animals">Balloon Animals</option>
+<option value="Bounce House">Bounce House</option>
+<option value="Clown">Clown</option>
+<option value="Cornhole">Cornhole</option>
+<option value="DJ">DJ</option>
+<option value="Face Painting">Face Painting</option>
+<option value="Magician">Magician</option>
+</select>
+<p>Do you have any other suggestions or comments?</p>
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" cols="50"></textarea>
+<br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
