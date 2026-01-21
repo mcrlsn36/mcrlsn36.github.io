@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bakery</title>
+<style>
+.grid {
+display: grid;
+height:1920px;
+grid:
+     'nav'    100px
+     'hero'   600px
+     'head'   1fr
+     'cards'  600px
+     'footer' 300px
+     /1fr;
+}
+#grid2{
+display: grid;
+gap:10px;
+grid:
+     'logo home menu locations login' 1fr
+     /1fr 1fr 1fr 1fr 1fr;
+}
+#logo{
+grid-area: logo;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#home{
+grid-area:home;
+color: pink;
+font-size: 24px;
+font-family: Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center; 
+}  
+
+#menu{
+grid-area:menu;
+color: pink;
+font-size: 24px;
+font-family: Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center; 
+} 
+#locations{
+grid-area:locations;
+color: pink;
+font-size: 24px;
+font-family: Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center; 
+} 
+#login{
+grid-area:login;
+color: pink;
+font-size: 24px;
+font-family: Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+#hero{
+grid-area: hero;
+height: 100%;
+width: 100%;
+object-fit: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#centered{
+position: absolute;
+top: 50%;
+left: 40%;
+transform: translate(-50%, -50%);
+font-size: 85px;
+font-family: Georgia, Times, serif;
+color: white;
+}
+#button{
+grid-area: hero;
+display: inline-block;
+padding: 10px 20px;
+margin: 10px;
+background-color: white;
+color: black;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+position: absolute;
+top: 
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="grid">
+<div id="nav">
+<div id="grid2">
+<div id="logo"><img src="media/cupcake_logoo.png" alt:"logo"> </div>
+<div id="home">Home</div>
+<div id="menu">Menu</div>
+<div id="locations">Locations</div>
+<div id="login">Login</div>
+</div>
+</div>
+<div id="hero">
+<img src="media/hero-imageee.png" alt: "donuts image">
+<div id="centered">Ready to try our 
+new donut flavors?</div>
+<div id="button">Order</div>
+</div>
+<div id="head">Head</div>
+<div id="cards">Cards</div>
+<div id="footer">Footer</div>
+</div>
+</body>
