@@ -66,7 +66,7 @@ display: flex;
 justify-content: center;
 align-items: center; 
 }
-#hero{
+.hero{
 grid-area: hero;
 height: 100%;
 width: 100%;
@@ -91,14 +91,22 @@ padding: 10px 20px;
 margin: 10px;
 background-color: white;
 color: black;
-font-size: 16px;
+font-size: 30px;
 border: none;
 border-radius: 5px;
 cursor: pointer;
 position: absolute;
-top: 
+top: 75%;
+left:20%;
+transform: translate(-75%, -20%);
 }
-
+#head{
+grid-area: head;
+font-size: 65px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
 
 
@@ -113,16 +121,18 @@ top:
 <div id="home">Home</div>
 <div id="menu">Menu</div>
 <div id="locations">Locations</div>
-<div id="login">Login</div>
+<div id="login">
+<a href="1.html">Login</a>
 </div>
 </div>
-<div id="hero">
+</div>
+<div class="hero">
 <img src="media/hero-imageee.png" alt: "donuts image">
 <div id="centered">Ready to try our 
 new donut flavors?</div>
 <div id="button">Order</div>
 </div>
-<div id="head">Head</div>
+<div id="head">Welcome to Betty's Bakery!</div>
 <div id="cards">Cards</div>
 <div id="footer">Footer</div>
 </div>
