@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login/create account</title>
+<style>
+.grid {
+display: grid;
+height:700px;
+grid:
+     'nav'    100px
+     'login'  500px
+     'footer' 1fr
+     /1fr;
+}
+#grid2{
+display: grid;
+gap:10px;
+grid:
+     'logo home menu locations' 1fr
+     /1fr 1fr 1fr 1fr;
+}
+#logo{
+grid-area: logo;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#home{
+grid-area:home;
+color: pink;
+font-size: 24px;
+font-family: Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center; 
+}  
+
+#menu{
+grid-area:menu;
+color: pink;
+font-size: 24px;
+font-family: Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center; 
+} 
+#locations{
+grid-area:locations;
+color: pink;
+font-size: 24px;
+font-family: Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#login{
+grid-area:login;
+font-size: 20px;
+}
+#footer{
+grid-area: footer;
+font-size: 20px;
+color: white;
+background-color: pink;
+}
+#grid3{
+display: grid;
+gap: 10px;
+grid:
+     'new old' 600px
+     /1fr 1fr;
+}
+#form{
+border: solid pink;
+border-radius: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#form2{
+border:solid pink;
+border-radius: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+</style>
+</head>
+</body>
+<div class="grid">
+<div id="nav">
+<div id="grid2">
+<div id="logo"><a href="index.html"><img src="media/cupcake_logoo.png" alt:"logo"></a></div>
+<div id="home">Home</div>
+<div id="menu">Menu</div>
+<div id="locations">Locations</div>
+</div>
+</div>
+<div id="login">
+<div id="grid3">
+<div id="heading">
+<h1>New Acount</h1>
+<div id="form">
+<form action="https://httpbin.org/post" method="post">
+Name:
+<input type="text" name="your name">
+<br>
+Email:
+<input type="email" name="email">
+<br>
+Phone:
+<input type="text" name="number">
+<br>
+Create Password:
+<label for="text" name="create password">
+<label for="customer">I am a customer</label>
+<input type="radio" id="customer" name="customer" value="customer">
+<br>
+<button type="submit"> Submit</button>
+</form>
+</div>
+</div>
+<div id="heading2">
+<h1>Login</h1>
+<div id="form2">
+<form action="https://httpbin.org/post" method="post">
+Username or Email:
+<input type="text" name="email user">
+<br>
+Password:
+<input type="text" name="password">
+<br>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+
+
+</div>
+</div>
+<div id="footer">Footer</div>
+
+
+</body>
+</html>
