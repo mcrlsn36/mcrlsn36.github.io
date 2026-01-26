@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order</title>
+<style>
+.grid {
+display: grid;
+height: 1700px;
+gap:10px;
+grid:
+     'nav'     100px
+     'cards'   1500px
+     'footer'  1fr
+     /1fr;
+}
+#grid2{
+display: grid;
+gap:10px;
+grid:
+      'logo home menu locations login' 1fr
+      /1fr 1fr 1fr 1fr 1fr;
+}
+#logo{
+grid-area: logo;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#home{
+grid-area: home;
+color: pink;
+font-size: 24px;
+font-family:Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#menu{
+grid-area: menu;
+color: pink;
+font-size: 24px;
+font-family:Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#locations{
+grid-area: locations;
+color: pink;
+font-size: 24px;
+font-family:Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#login{
+grid-area: login;
+color: pink;
+font-size: 24px;
+font-family:Georgia, Times, serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#footer{
+grid-area: footer;
+font-size: 20px;
+color: white;
+background-color: pink;
+}
+#grid3{
+display: grid;
+gap: 10px;
+grid:
+     'green white cookie'     1fr
+     'cereal purple cake'     1fr
+     'berries crushed velvet' 1fr
+     /1fr 1fr 1fr;
+}
+.green{
+grid-area:green;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.price{
+color:grey;
+font-size: 22px:
+}
+.green button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%
+font-size: 18px;
+}
+.white{
+grid-area: white;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.white button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+.cookie{
+grid-area: cookie;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.cookie button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+.cereal{
+grid-area: cereal;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.cereal button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+.purple{
+grid-area: purple;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.purple button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+.cake{
+grid-area: cake;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.cake button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+.berries{
+grid-area: berries;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.berries button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+.crushed{
+grid-area: crushed;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.crushed button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+.velvet{
+grid-area: velvet;
+max-width:300px;
+margin: auto;
+text-align:center;
+font-family:arial;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -35%);
+}
+.velvet button{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+</style>
+</head>
+<body>
+<div class="grid">
+<div id="nav">
+<div id="grid2">
+<div id="logo"><a href="index.html"><img src="media/cupcake_logoo.png" alt="logo"></a></div>
+<div id="home">Home</div>
+<div id="menu">Menu</div>
+<div id="locations">Locations</div>
+<div id="login">
+<a href="1.html">Login</a></div>
+</div>
+</div>
+<div id="grid3">
+<div id="green">
+<img src="media/green-donut.jpg" alt="donut picture" style="width 100%">
+<!--This image is by yuk and is free to use under unsplash license-->
+<h1>Chocolate Donut</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="white">
+<img src="media/white-donut.jpg" alt="donut picture" style="width 100%">
+<!--This image is by yuk and is free to use under unsplash license-->
+<h1>Cream Donut</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="cookie">
+<img src="media/cookie-donut.jpg" alt="donut picture" style="width 100%">
+<!--This image is by yuk and is free to use under unsplash license-->
+<h1>Cookie Donut</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="cereal">
+<img src="media/cereal-donut.jpg" alt="donut picture" style="width 100%">
+<!--This image is by yuk and is free to use under unsplash license-->
+<h1>Cereal Donut</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="purple">
+<img src="media/purple-donut.jpg" alt="donut picture" style="width 100%">
+<!--This image is by shche_team and is free to use under unsplash license-->
+<h1>Purple Donut</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="cake">
+<img src="media/cake.jpg" alt="cake picture" style="width 100%">
+<!--This image is by Alimentos Fotogenicos and is free to use under unsplash license-->
+<h1>Cake</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="berries">
+<img src="media/berries-cupcake.jpg" alt="cupcake picture" style="width 100%">
+<!--This image is by Alimentos Fotogenicos and is free to use under unsplash license-->
+<h1> Berry Cupcake</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="crushed">
+<img src="media/crushed-cupcake.jpg" alt="cupcake picture" style="width 100%">
+<!--This image is by Alimentos Fotogenicos and is free to use under unsplash license-->
+<h1> Crushed Cupcake</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+<div id="velvet">
+<img src="media/velvet-cupcake.jpg" alt="cupcake picture" style="width 100%">
+<!--This image is by Alimentos Fotogenicos and is free to use under unsplash license-->
+<h1> Velvet Cupcake</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Order</button></p>
+</div>
+</div>
+</div>
+<div id="footer">Footer</div>
+</div>
+</div>
+</body>
+</html>
