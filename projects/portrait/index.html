@@ -26,10 +26,47 @@ ctx.lineWidth=10;
 //Draw the background
 ctx.fillRect(0,0,800,800);
 
-//draw the heart
+//draw the person
 ctx.fillStyle="#f542f2";
 
-//arc(x,y,radius,start,stop)
+//Back of hair
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.rect(200,200,390,600);
+ctx.fill();
+
+//curly hair left side
+ctx.beginPath();
+ctx.fillstyle="black";
+ctx.arc(200,300,70,0.5*Math.PI,1.5*Math.PI);
+ctx.arc(200,400,70,0.5*Math.PI,1.5*Math.PI);
+ctx.arc(200,500,70,0.5*Math.PI,1.5*Math.PI);
+ctx.arc(200,600,70,0.5*Math.PI,1.5*Math.PI);
+ctx.fill();
+
+//curly hair right side
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.arc(590,300,70,1.5*Math.PI,0.5*Math.PI);
+ctx.arc(590,400,70,1.5*Math.PI,0.5*Math.PI);
+ctx.arc(590,500,70,1.5*Math.PI,0.5*Math.PI);
+ctx.arc(590,600,70,1.5*Math.PI,0.5*Math.PI);
+ctx.fill();
+
+//top of head(left side)
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.arc(350,270,200,-Math.PI,0);
+ctx.fill();
+
+//top of head(right side)
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.arc(450,270,200,-Math.PI,0);
+ctx.fill();
+
+
+//the head (x,y,radius,start,stop)
 ctx.beginPath();
 ctx.fillStyle="SaddleBrown";
 ctx.arc(400, 300, 200, -Math.PI,0); //top of circle
@@ -41,7 +78,7 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle="LightSeaGreen";
 ctx.moveTo(400,800);
-ctx.arc(400,800,300,-Math.PI,0);
+ctx.arc(400,800,290,-Math.PI,0);
 ctx.fill();
 ctx.stroke();
 
@@ -80,24 +117,24 @@ ctx.stroke();
 
 //right hair
 ctx.beginPath();
-ctx.moveTo(490,120)
-ctx.quadraticCurveTo(470, 210, 605, 237);
+ctx.moveTo(495,115)
+ctx.quadraticCurveTo(520, 210, 605, 237);
 ctx.fillStyle="black"
 ctx.fill();
 ctx.stroke();
 
 //left hair
 ctx.beginPath();
-ctx.moveTo(315,120)
-ctx.quadraticCurveTo(350, 205, 195, 235);
+ctx.moveTo(312,113)
+ctx.quadraticCurveTo(305, 190, 187, 240);
 ctx.fillStyle="black"
 ctx.fill();
 ctx.stroke();
 
 //middle hair
 ctx.beginPath();
-ctx.moveTo(320,115)
-ctx.quadraticCurveTo(415, 190, 490, 115);
+ctx.moveTo(305,105)
+ctx.quadraticCurveTo(415, 170, 510, 105);
 ctx.fillStyle="black"
 ctx.fill();
 ctx.stroke();
@@ -125,6 +162,12 @@ ctx.beginPath();
 ctx.moveTo(355,293);
 ctx.lineTo(295,253);
 ctx.stroke();
+
+//neck
+ctx.beginPath();
+ctx.fillStyle="SaddleBrown";
+ctx.rect(375,490,60,40);
+ctx.fill();
 
 </script>
 </body>
