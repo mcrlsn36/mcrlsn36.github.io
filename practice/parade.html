@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shooting Stars!</title>
+<style>
+canvas{
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h1>Look! Shooting Stars </h1>
+<canvas id="myCanvas" width=800 height=800></canvas>
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+let x = 700; //Initial x position
+let y = 300; //Initial y position
+let x2 = 50;
+let y2 = 100;
+const radius = 4; //circle radius
+let speed = -7; //speed from left to right
+let speed2 = 7;
+
+function animate(){
+requestAnimationFrame(animate);
+
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+//sky
+ctx.beginPath();
+ctx.fillStyle = "MidnightBlue";
+ctx.fillRect(0,0,800,600);
+ctx.fill();
+
+//grass
+ctx.beginPath();
+ctx.fillStyle = "green";
+ctx.fillRect(0,500,800,300);
+ctx.fill();
+
+//Moon
+ctx.beginPath();
+ctx.fillStyle = "Gold";
+ctx.arc(600,200,65,0,2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+
+//crecent shape
+ctx.beginPath();
+ctx.fillStyle = "MidnightBlue";
+ctx.arc(570,200,60,0,2 * Math.PI);
+ctx.fill();
+
+//stars
+function drawStar(x,y){
+ctx.beginPath();
+ctx.fillStyle = "white";
+ctx.arc(x,y,4,0,2 * Math.PI);
+ctx.fill();
+}
+drawStar(200,400)
+drawStar(300,200)
+drawStar(100,100)
+drawStar(500,150)
+drawStar(600,400)
+drawStar(700,300)
+drawStar(400,350)
+drawStar(110,300)
+drawStar(260,60)
+drawStar(550,30)
+drawStar(750,100)
+drawStar(400,490)
+drawStar(780,470)
+drawStar(110,300)
+
+//draw
+ctx.beginPath();
+ctx.arc(x,y,radius,0,2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(x2,y2,radius,0,2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+x += speed; //update circle's position
+x2 += speed2;
+}
+
+//animate
+animate();
+</script>
+</body>
+</html>
