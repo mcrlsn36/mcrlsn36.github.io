@@ -15,16 +15,23 @@ border: 1px solid black;
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
-let x = 700; //Initial x position
+let x = 800; //Initial x position
 let y = 300; //Initial y position
-let x2 = 50;
+let x2 = 0;
 let y2 = 100;
+let x3 = 800;
+let y3 = 200;
+let x4 = 0;
+let y4 = 10;
 const radius = 4; //circle radius
 let speed = -7; //speed from left to right
 let speed2 = 7;
+let time = 0;
 
 function animate(){
 requestAnimationFrame(animate);
+
+time = time + 1;
 
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -86,8 +93,28 @@ ctx.arc(x2,y2,radius,0,2 * Math.PI);
 ctx.fillStyle = "white";
 ctx.fill();
 
-x += speed; //update circle's position
+ctx.beginPath();
+ctx.arc(x3,y3,radius,0,2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(x4,y4,radius,0,2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+if (time<160){
+x += speed;     //update circle's position
+}
+if(time>140){
 x2 += speed2;
+}
+if (time>130){
+x3 += speed;
+}
+if (time>120){
+x4 += speed2;
+}
 }
 
 //animate
