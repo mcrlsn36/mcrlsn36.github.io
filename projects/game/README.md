@@ -1,10 +1,8 @@
-# Chris Needs Coffee
+# Don't Miss The Bus!
 
 ## Setting
 
-This game takes place at the Arlington Career Center. I tried to f
-faithfully recreate it, with the exception of moving the 
-library to the first floor.
+This game takes place at the main character's apartment in their bed room. 
 
 ## Map
 
@@ -24,6 +22,8 @@ The player starts on the bus, and then is directed into the Commons. T
 They can explore, but must eventually make their way to rm511.
 
 ## Story
+
+The player wakes up on a school day. They need to catch the bus in order to get to school. If they don't catch the school bus, there is no way for them to get to school. Before they get on the bus though, the have to complete certain morning routine tasks like picking out what to wear, eating breakfast, and brushing teeth.If they end up with extra time, there are other things they can add to their morning routine but if it takes too long, they risk missing the school bus. 
 
 When the user gets to rm511, they learn that the teacher is asleep.
 They must take the teacher's coffee mug to the library, get it 
