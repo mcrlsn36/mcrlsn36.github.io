@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: LightSkyBlue;
     font-family: 'Courier New', monospace;
-    color: #00ff00;
+    color: snow;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -13,8 +13,8 @@ h1{
 }
 
 .location{
-    background-color:aqua;
-    color: black;
+    background-color:white;
+    color: LightSkyBlue;
     border-radius:5px;
 }
 
@@ -24,16 +24,16 @@ h1{
     flex-direction: column;
     max-width: 80%;
     margin: 0 auto;
-    border: 2px solid #00ff00;
+    border: 10px dotted white;
     padding: 20px;
-    background-color: #000;
+    background-color: LightSkyBlue;
     overflow: hidden;
 }
 
 #output {
     flex: 1;
     overflow-y: auto;
-    margin-bottom: 20px;
+    margin-bottom: -100px;
     line-height: 1.6;
     font-size: 16px;
     white-space: pre-wrap;
@@ -57,14 +57,14 @@ h1{
     flex: 1;
     background: transparent;
     border: none;
-    color: #00ff00;
+    color: red;
     font-family: 'Courier New', monospace;
-    font-size: 16px;
+    font-size: 15px;
     outline: none;
 }
 
 #user-input::placeholder {
-    color: #008800;
+    color: red;
 }
 
 .ascii-art {
