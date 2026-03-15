@@ -2,53 +2,28 @@
 
 ## Setting
 
-This game takes place at the main character's apartment in their bed room. 
+This game takes place within different areas in the player's house.
 
 ## Map
 
 ```mermaid
 graph TD;
-    bus(((Bus)))-->Commons;
-    Library-->Commons;
-    Box-->Cafeteria;
-    Cafeteria-->Commons;
-    Commons-->Outside;
-    Outside-->Portable;
-    Portable-->rm511;
-    Portable-->Bathroom;
+    bedroom-->wardrobe;
+    wardrobe-->kitchen;
+    kitchen-->bathroom;
+    bathroom-->desk;
+    desk-->catch the bus;
 ```
 
-The player starts on the bus, and then is directed into the Commons. T
-They can explore, but must eventually make their way to rm511.
+It is a school morning. The character wakes up out of bed and has to complete their daily morning routine in order to get on the bus and go to school.
 
 ## Story
 
-The player wakes up on a school day. They need to catch the bus in order to get to school. If they don't catch the school bus, there is no way for them to get to school. Before they get on the bus though, the have to complete certain morning routine tasks like picking out what to wear, eating breakfast, and brushing teeth.If they end up with extra time, there are other things they can add to their morning routine but if it takes too long, they risk missing the school bus. 
+If the player doesn't catch the school bus, there is no way for them to get to school. Before they get on the bus though, the have to complete their morning routine. Order of completion plays a huge role in this game. If the player doeas all the tasks in the correct order, they will be able to catch the bus. If they don't, they might have consequences and need to start the game over again. 
 
-When the user gets to rm511, they learn that the teacher is asleep.
-They must take the teacher's coffee mug to the library, get it 
-filled, and then bring it back to the teacher.
+When they first get up, they will have an option to get back in bed. This is a bad option as it causes them to oversleep and miss the bus. The best choices to start would be to go to the desk, wardobe, or kitchen. The wardrobe could be risky because some outfits will be problamatic in the future. If you choose the right outfits though, you will be safe. The kitchen could be a good option because you won't have any problems if you go there before the wardrobe. You are also praised when you reach the bathroom for eating before brushing your teeth. The order in witch you go to your desk will not have an impact on any other locations but if you don't go to your desk, you will not be able to catch the bus. 
 
-The game starts 15 minutes before the morning class bell, and each
-move costs 1 minute. So this journey must be completed in 15 moves.
-Some moves (like reading a book in the library) cost extra time.
 
 ## Global Variables
 
-The most important variables are
-`haveCup` and `cupIsFull`, both
-booleans that track progress in the
-story. Depending on these two variables,
-some rooms will display different things. For example, if you walk into the
-library without the cup, it will prompt you to
-read. If you walk in with the cup, it will show
-the librarian filling the cup with coffee.
-
-I also have numeric variables called `day` and `minute` which keep track of 
-time. `minute` starts at 0 and counts up
-with each move.
-
-I have a little HUD map, and use a bunch of 
-boolean variables to control which
-rooms the player has discovered. A map is only displayed after the user
-visits it.
+My global variables determine weather or not the player has visited that location yet. They are all booleen expressions that start off set to false until the player gets to them in the game. The order in which the player gets to certain locations matters as it can change how their morning goes or can even cause them to lose the game.If the player visits the locations in an acceptable order, then they will be able to catch the bus.
