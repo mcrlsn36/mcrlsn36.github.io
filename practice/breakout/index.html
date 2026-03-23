@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Gamedev Canvas Workshop</title>
@@ -17,7 +17,7 @@
   </head>
   <body>
     <canvas id="myCanvas" width="480" height="320"></canvas>
-
+    <button id= "runButton">Start game</button>
     <script> 
       const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
@@ -90,6 +90,7 @@ function keyUpHandler(e) {
 const runButton = document.getElementById("runButton");
 runButton.addEventListener("click", () => {
   startGame();
+	runButton.disabled = true;
 });
     </script>
   </body>
