@@ -1,71 +1,57 @@
-body{ background-color: pink;
+body{ background-color: #d5eeff;
 }
 
 .grid {
 	display: grid;
-	height:1720px;
+	height:3600px;
 	grid:
-	'nav'    100px
-	'hero'   600px
-	'head'   1fr
-	'cards'  700px
-	'footer' 150px
+	'nav'     100px
+	'head'    1fr
+	'hero'    650px
+	'message' 1fr
+	'cards'   2000px
+	'footer'  200px
 	/1fr;
 }
 #nav{
 	grid-area:nav;
-	font-size:35px;
-}
-#grid2{
-	display: grid;
-	gap:10px;
-	grid:
-	'logo about contact work home' 1fr
-	/1fr 1fr 1fr 1fr 1fr;
-}
-#logo{
-	grid-area: logo;
-	height: 100%;
-	width: 100%;
+	font-size:25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#about{
-	grid-area: about;
-	color: Salmon;
-	font-size:28px;
-	font-family: Georgia, Times, serif;
+#nav{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+}
+#nav:hover{
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#nav-container{
+padding: 2px 16px;
+}
+#hero{
+	grid-area: hero;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#contact{
-	grid-area: contact;
-	color: Salmon;
-	font-size:28px;
-	font-family: Georgia, Times, serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#hero{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
 }
-#work{
-	grid-area: work;
-	color: Salmon;
-	font-size:28px;
-	font-family: Georgia, Times, serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#hero:hover{
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-#home{
-	grid-area: home;
-	color: Salmon;
-	font-size:28px;
-	font-family: Georgia, Times, serif;
+#hero-container{
+padding: 2px 16px;
+}
+#head{
+	grid-area: head;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 85px;
 }
 #centered{
         position: absolute;
@@ -80,16 +66,13 @@ body{ background-color: pink;
 	grid-area:cards;
 	font-size:35px;
 }
-#footer{
-	grid-area: footer;
-	font-size:20px;
-}
 #grid3{
 display: grid;
 gap:10px;
 grid:
-      'project1 project2 project3 project4' 1fr
-      /1fr 1fr 1fr 1fr;
+      'project1 project2' 1fr
+      'project3 project4' 1fr
+      /1fr 1fr;
 }
 #project1{
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -133,10 +116,17 @@ padding: 2px 16px;
 }
 #footer{
 grid-area: footer;
-color: white;
-background-color: Pink;
+color: black;
 display: flex;
 justify-content: center;
 align-items: center;
 font-size:25px;
+}
+#message{
+	grid-area: message;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:25px;
 }
